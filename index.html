@@ -31,7 +31,7 @@
       background: url('https://images.pexels.com/photos/3182761/pexels-photo-3182761.jpeg') no-repeat center center/cover;
       color: white;
       text-align: center;
-      padding: 120px 20px;
+      padding: 150px 20px 120px 20px;
       position: relative;
     }
 
@@ -43,9 +43,16 @@
       z-index: 0;
     }
 
-    header h1, header p, header a {
+    header .branding, header h1, header p, header a {
       position: relative;
       z-index: 1;
+    }
+
+    .branding {
+      font-size: 2em;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: #fff;
     }
 
     header h1 {
@@ -87,7 +94,6 @@
       margin: 0 auto;
     }
 
-    /* Bounce en la tarjeta */
     @keyframes bounceCard {
       0%, 20%, 50%, 80%, 100% {
         transform: translateY(0);
@@ -120,7 +126,6 @@
       object-fit: cover;
       border-radius: 8px;
       margin-bottom: 15px;
-      transition: none;
     }
 
     .card h3 {
@@ -139,6 +144,14 @@
       border-radius: 50%;
       margin-bottom: 20px;
       box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .about-text {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1.2em;
+      line-height: 1.7em;
+      color: #333;
     }
 
     .testimonial {
@@ -181,7 +194,6 @@
       color: #0A66C2;
     }
 
-    /* Bounce para botón WhatsApp */
     @keyframes bounceBtn {
       0%, 20%, 50%, 80%, 100% {
         transform: translateY(0);
@@ -245,7 +257,7 @@
 
       .card {
         width: 90%;
-        animation: none !important; /* Quitar bounce en móviles */
+        animation: none !important;
       }
 
       .card:hover {
@@ -264,6 +276,9 @@
 <body>
 
 <header data-aos="fade-down">
+  <div class="branding" data-aos="fade-down" data-aos-delay="300">
+    David López | Growth & Web Strategy
+  </div>
   <h1>Tu talento merece ser visible</h1>
   <p>Construyamos juntos tu crecimiento</p>
   <a href="#servicios" class="btn-primary">Impulsa tu Presencia Digital</a>
@@ -294,8 +309,12 @@
 
 <section class="about" data-aos="fade-up">
   <img src="https://i.imgur.com/0GZ2HyO.png" alt="David López" class="about-photo">
-  <h2>¿Quién soy?</h2>
-  <p>Con más de 13 años liderando Marketing y Growth en empresas digitales líderes de LATAM como American Express, Cabify y Lamudi, mi misión es ayudarte a construir una presencia online que genere verdadero crecimiento de negocio.</p>
+  <div class="about-text">
+    <p>Mi camino en el mundo digital comenzó en corporativos: liderando proyectos de marketing y crecimiento para compañías como American Express, Cabify y Lamudi.</p>
+    <p>Ahí entendí que el verdadero éxito digital no se trata de grandes presupuestos o marcas famosas. Se trata de estrategia real, ejecución inteligente y conexión humana.</p>
+    <p>Hoy, aplico todo ese conocimiento para ayudar a negocios, freelancers y profesionales a construir una presencia online sólida, que genere resultados tangibles: más visibilidad, más clientes, más crecimiento.</p>
+    <p>Mi misión es ayudarte a destacar en un mundo saturado. No solo con diseño bonito, sino con estrategia digital pensada para atraer, convertir y hacer crecer tu marca de forma real.</p>
+  </div>
 </section>
 
 <section class="testimonials" id="testimonios" data-aos="fade-up">
