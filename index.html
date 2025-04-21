@@ -20,26 +20,26 @@
   <style>
     body {
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(270deg, #e0eafc, #cfdef3, #e0eafc);
-      background-size: 600% 600%;
-      animation: gradientAnimation 20s ease infinite;
+      background: #f9fafb;
       margin: 0;
       padding: 0;
       scroll-behavior: smooth;
+    }
+
+    header {
+      background: linear-gradient(270deg, #e0eafc, #cfdef3, #e0eafc);
+      background-size: 600% 600%;
+      animation: gradientAnimation 20s ease infinite;
+      color: white;
+      text-align: center;
+      padding: 120px 20px;
+      position: relative;
     }
 
     @keyframes gradientAnimation {
       0% {background-position: 0% 50%;}
       50% {background-position: 100% 50%;}
       100% {background-position: 0% 50%;}
-    }
-
-    header {
-      background: url('https://images.pexels.com/photos/3182761/pexels-photo-3182761.jpeg') no-repeat center center/cover;
-      color: white;
-      text-align: center;
-      padding: 120px 20px;
-      position: relative;
     }
 
     header::after {
