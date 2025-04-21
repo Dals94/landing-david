@@ -38,7 +38,7 @@
       content: "";
       position: absolute;
       top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(10, 102, 194, 0.4); /* Azul más sutil */
+      background: rgba(10, 102, 194, 0.4);
       z-index: 0;
     }
 
@@ -73,7 +73,7 @@
     }
 
     section {
-      padding: 80px 20px;
+      padding: 70px 20px;
       text-align: center;
       background: #f9fafb url('https://www.transparenttextures.com/patterns/cubes.png');
     }
@@ -181,10 +181,13 @@
     }
 
     @media(max-width:768px) {
+      section {
+        padding: 50px 15px;
+      }
+
       .services {
         flex-direction: column;
         align-items: center;
-        padding: 40px 20px;
       }
 
       .card {
@@ -196,28 +199,28 @@
 
 <body>
 
-<header>
+<header data-aos="fade-down">
   <h1>Tu talento merece ser visible</h1>
   <p>Construyamos juntos tu crecimiento</p>
   <a href="#servicios" class="btn-primary">Impulsa tu Presencia Digital</a>
 </header>
 
 <section id="servicios" class="services">
-  <div class="card">
+  <div class="card" data-aos="fade-up">
     <img src="https://images.pexels.com/photos/3183171/pexels-photo-3183171.jpeg" alt="Landing Estratégica">
     <h3>Landing Estratégica</h3>
     <p>Convierte visitas en clientes con una página enfocada en captar leads directo a tu WhatsApp.</p>
     <a href="https://wa.me/5215536679617?text=Hola%20David,%20quiero%20una%20Landing%20Estratégica" class="btn-primary" target="_blank">Solicitar</a>
   </div>
 
-  <div class="card">
+  <div class="card" data-aos="fade-up" data-aos-delay="100">
     <img src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg" alt="Mini Sitio Profesional">
     <h3>Mini Sitio Profesional</h3>
     <p>Tu sitio profesional optimizado para impulsar tu presencia online y atraer más clientes.</p>
     <a href="https://wa.me/5215536679617?text=Hola%20David,%20quiero%20un%20Mini%20Sitio%20Profesional" class="btn-primary" target="_blank">Solicitar</a>
   </div>
 
-  <div class="card">
+  <div class="card" data-aos="fade-up" data-aos-delay="200">
     <img src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg" alt="Acelerador Digital">
     <h3>Acelerador Digital</h3>
     <p>Un ecosistema digital completo para maximizar tu captación y acelerar tu crecimiento.</p>
@@ -225,13 +228,13 @@
   </div>
 </section>
 
-<section class="about">
+<section class="about" data-aos="fade-up">
   <img src="https://i.imgur.com/0GZ2HyO.png" alt="David López" class="about-photo">
   <h2>¿Quién soy?</h2>
   <p>Con más de 13 años liderando Marketing y Growth en empresas digitales líderes de LATAM como American Express, Cabify y Lamudi, mi misión es ayudarte a construir una presencia online que genere verdadero crecimiento de negocio.</p>
 </section>
 
-<section class="testimonials">
+<section class="testimonials" data-aos="fade-up">
   <h2>Testimonios</h2>
 
   <div class="testimonial-stars">⭐️⭐️⭐️⭐️⭐️</div>
@@ -243,7 +246,7 @@
   <h4>– Luis Rodríguez, Asesor Financiero</h4>
 </section>
 
-<section class="contact">
+<section class="contact" data-aos="fade-up">
   <h2>Contáctame hoy mismo</h2>
   <p>Demos el primer paso para hacer crecer tu presencia digital.</p>
   <a href="https://wa.me/5215536679617?text=Hola%20David,%20quiero%20más%20información%20sobre%20tu%20servicio%20web." target="_blank" class="btn-whatsapp">Escríbeme por WhatsApp</a>
