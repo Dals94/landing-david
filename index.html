@@ -5,7 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>David López | Growth & Web Strategy</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NFCZB9SW0N"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-NFCZB9SW0N');
+  </script>
 
   <style>
     body {
@@ -15,11 +23,10 @@
       line-height: 1.7;
       padding: 0;
       margin: 0;
-      scroll-behavior: smooth;
     }
 
     header {
-      background: url('https://images.pexels.com/photos/3184326/pexels-photo-3184326.jpeg') no-repeat center center/cover;
+      background: url('https://images.unsplash.com/photo-1626785774573-4b799315345d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
       color: white;
       padding: 120px 20px 100px;
       text-align: center;
@@ -79,6 +86,8 @@
 
     .card img {
       width: 100%;
+      height: 200px;
+      object-fit: cover;
       border-radius: 8px;
       margin-bottom: 20px;
     }
@@ -108,7 +117,7 @@
       font-size: 1.1em;
     }
 
-    .btn-whatsapp {
+    .btn-whatsapp, .btn-linkedin {
       background-color: #FFD700;
       color: #000;
       padding: 12px 24px;
@@ -117,10 +126,10 @@
       text-decoration: none;
       font-weight: bold;
       display: inline-block;
-      margin-top: 10px;
+      margin: 10px 10px;
     }
 
-    .btn-whatsapp:hover {
+    .btn-whatsapp:hover, .btn-linkedin:hover {
       background-color: #e6c200;
     }
 
@@ -154,50 +163,36 @@
   </header>
 
   <section id="servicios" class="services">
-    <div class="card" data-aos="fade-up">
-      <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg" alt="Landing Estratégica">
+    <div class="card">
+      <img src="6A80DF62-C2B7-4F89-8616-0721237667C2.jpeg" alt="Landing Estratégica">
       <h3>Landing Estratégica</h3>
       <p>Página de aterrizaje diseñada para captar leads directo a tu WhatsApp.</p>
-      <a href="#" class="btn-primary">Solicitar</a>
+      <a href="https://wa.me/5215536679617?text=Hola%20David,%20quiero%20una%20Landing%20Estratégica" class="btn-primary" target="_blank">Solicitar</a>
     </div>
-    <div class="card" data-aos="fade-up" data-aos-delay="100">
-      <img src="https://images.pexels.com/photos/3182765/pexels-photo-3182765.jpeg" alt="Mini Sitio Profesional">
+    <div class="card">
+      <img src="B154DA90-60D0-446F-BE16-8DD9100AFB4B.jpeg" alt="Mini Sitio Profesional">
       <h3>Mini Sitio Profesional</h3>
       <p>Web de 3-5 secciones con SEO básico para impulsar tu presencia online.</p>
-      <a href="#" class="btn-primary">Solicitar</a>
+      <a href="https://wa.me/5215536679617?text=Hola%20David,%20quiero%20un%20Mini%20Sitio%20Profesional" class="btn-primary" target="_blank">Solicitar</a>
     </div>
-    <div class="card" data-aos="fade-up" data-aos-delay="200">
-      <img src="https://images.pexels.com/photos/3184396/pexels-photo-3184396.jpeg" alt="Acelerador Digital">
+    <div class="card">
+      <img src="5469B174-700D-41CC-9348-BE37DA20C01E.jpeg" alt="Acelerador Digital">
       <h3>Acelerador Digital</h3>
       <p>Web completa + Integraciones de marketing para llevar tu captación al siguiente nivel.</p>
-      <a href="#" class="btn-primary">Solicitar</a>
+      <a href="https://wa.me/5215536679617?text=Hola%20David,%20quiero%20el%20Acelerador%20Digital" class="btn-primary" target="_blank">Solicitar</a>
     </div>
   </section>
 
-  <section class="contact" data-aos="fade-up" data-aos-delay="300">
+  <section class="contact">
     <h2>Contáctame hoy mismo</h2>
     <p>Demos el primer paso para hacer crecer tu presencia digital.</p>
     <a href="https://wa.me/5215536679617?text=Hola%20David,%20quiero%20más%20información%20sobre%20tu%20servicio%20web." target="_blank" class="btn-whatsapp">Escríbeme por WhatsApp</a>
+    <a href="https://www.linkedin.com/in/david-abraham-lopez/" target="_blank" class="btn-linkedin">Conectemos en LinkedIn</a>
   </section>
 
   <footer>
     © 2025 David López | Growth & Web Strategy. Todos los derechos reservados.
   </footer>
-
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-
-    // Scroll suave
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-        });
-      });
-    });
-  </script>
 
 </body>
 </html>
