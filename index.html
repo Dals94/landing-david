@@ -20,18 +20,10 @@
   <style>
     body {
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(270deg, #e0eafc, #cfdef3, #e0eafc);
-      background-size: 600% 600%;
-      animation: gradientAnimation 20s ease infinite;
+      background: #f9fafb url('https://www.transparenttextures.com/patterns/cubes.png') repeat;
       margin: 0;
       padding: 0;
       scroll-behavior: smooth;
-    }
-
-    @keyframes gradientAnimation {
-      0% {background-position: 0% 50%;}
-      50% {background-position: 100% 50%;}
-      100% {background-position: 0% 50%;}
     }
 
     header {
@@ -95,20 +87,16 @@
     }
 
     .card {
-      background: rgba(255, 255, 255, 0.25);
+      background: white;
       border-radius: 10px;
-      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      border: 1px solid rgba(255, 255, 255, 0.18);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       width: 300px;
       padding: 30px 20px;
-      transition: transform 0.3s, background 0.3s;
+      transition: transform 0.3s;
     }
 
     .card:hover {
-      transform: translateY(-10px) scale(1.02);
-      background: rgba(255, 255, 255, 0.35);
+      transform: translateY(-10px);
     }
 
     .card img {
@@ -117,11 +105,6 @@
       object-fit: cover;
       border-radius: 8px;
       margin-bottom: 15px;
-      transition: transform 0.3s;
-    }
-
-    .card:hover img {
-      transform: scale(1.05);
     }
 
     .card h3 {
@@ -143,13 +126,10 @@
     }
 
     .testimonial {
-      background: rgba(255, 255, 255, 0.25);
+      background: white;
       border-radius: 12px;
       padding: 30px 20px;
-      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      border: 1px solid rgba(255, 255, 255, 0.18);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       max-width: 500px;
       margin: 20px auto;
       text-align: center;
