@@ -27,21 +27,35 @@
     }
 
     header {
-      background: url('https://images.pexels.com/photos/3184326/pexels-photo-3184326.jpeg') no-repeat center center/cover;
+      position: relative;
+      background: url('https://images.pexels.com/photos/3182761/pexels-photo-3182761.jpeg') no-repeat center center/cover;
       color: white;
       padding: 120px 20px 100px;
       text-align: center;
     }
 
+    header::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: linear-gradient(rgba(10,102,194,0.5), rgba(10,102,194,0.1));
+      z-index: 0;
+    }
+
+    header h1, header p, header a {
+      position: relative;
+      z-index: 1;
+    }
+
     header h1 {
       font-size: 2.8em;
       margin-bottom: 15px;
-      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
     }
 
     header p {
       font-size: 1.3em;
-      text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
     }
 
     .btn-primary {
@@ -181,29 +195,29 @@
 
 <body>
 
-  <header>
+  <header data-aos="fade-in">
     <h1>Tu talento merece ser visible</h1>
     <p>Construyamos juntos tu crecimiento</p>
-    <a href="#servicios" class="btn-primary">Explorar Servicios</a>
+    <a href="#servicios" class="btn-primary">Impulsa tu Presencia Digital</a>
   </header>
 
   <section id="servicios" class="services">
     <div class="card" data-aos="fade-up">
       <img src="https://images.pexels.com/photos/3183171/pexels-photo-3183171.jpeg" alt="Landing Estratégica">
       <h3>Landing Estratégica</h3>
-      <p>Página de aterrizaje diseñada para captar leads directo a tu WhatsApp.</p>
+      <p>Convierte visitas en clientes con una página enfocada en captar leads directo a tu WhatsApp.</p>
       <a href="https://wa.me/5215536679617?text=Hola%20David,%20quiero%20una%20Landing%20Estratégica" class="btn-primary" target="_blank">Solicitar</a>
     </div>
     <div class="card" data-aos="fade-up" data-aos-delay="100">
-      <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg" alt="Mini Sitio Profesional">
+      <img src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg" alt="Mini Sitio Profesional">
       <h3>Mini Sitio Profesional</h3>
-      <p>Web de 3-5 secciones con SEO básico para impulsar tu presencia online.</p>
+      <p>Tu sitio profesional optimizado para impulsar tu presencia online y atraer más clientes.</p>
       <a href="https://wa.me/5215536679617?text=Hola%20David,%20quiero%20un%20Mini%20Sitio%20Profesional" class="btn-primary" target="_blank">Solicitar</a>
     </div>
     <div class="card" data-aos="fade-up" data-aos-delay="200">
       <img src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg" alt="Acelerador Digital">
       <h3>Acelerador Digital</h3>
-      <p>Web completa + Integraciones de marketing para llevar tu captación al siguiente nivel.</p>
+      <p>Un ecosistema digital completo para maximizar tu captación y acelerar tu crecimiento.</p>
       <a href="https://wa.me/5215536679617?text=Hola%20David,%20quiero%20el%20Acelerador%20Digital" class="btn-primary" target="_blank">Solicitar</a>
     </div>
   </section>
@@ -221,7 +235,7 @@
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    AOS.init();
+    AOS.init({ duration: 1000, once: true });
   </script>
 
 </body>
