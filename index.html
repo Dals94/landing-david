@@ -43,21 +43,23 @@
       z-index: 0;
     }
 
-    header .branding, header h1, header p, header a {
+    header h1, header .sub-branding, header p, header a {
       position: relative;
       z-index: 1;
-    }
-
-    .branding {
-      font-size: 2em;
-      font-weight: 700;
-      margin-bottom: 20px;
-      color: #fff;
     }
 
     header h1 {
       font-size: 2.8em;
       margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    .sub-branding {
+      font-size: 1.1em;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      font-weight: 400;
+      color: #dbeafe; /* Azul clarito para que combine sutilmente */
     }
 
     header p {
@@ -276,14 +278,13 @@
 <body>
 
 <header data-aos="fade-down">
-  <div class="branding" data-aos="fade-down" data-aos-delay="300">
-    David López | Growth & Web Strategy
-  </div>
   <h1>Tu talento merece ser visible</h1>
+  <p class="sub-branding">David López | Estrategia de Crecimiento Digital</p>
   <p>Construyamos juntos tu crecimiento</p>
   <a href="#servicios" class="btn-primary">Impulsa tu Presencia Digital</a>
 </header>
 
+<!-- Servicios -->
 <section id="servicios" class="services">
   <div class="card" data-aos="fade-up">
     <img src="https://images.pexels.com/photos/3183171/pexels-photo-3183171.jpeg" alt="Landing Estratégica">
@@ -307,15 +308,16 @@
   </div>
 </section>
 
+<!-- Quién soy -->
 <section class="about" data-aos="fade-up">
   <img src="https://i.imgur.com/0GZ2HyO.png" alt="David López" class="about-photo">
   <div class="about-text">
-Comencé mi carrera liderando estrategias de marketing y crecimiento para compañías como American Express, Cabify y Lamudi.
-
-Hoy, aplico esa experiencia para ayudar a negocios reales a construir una presencia digital sólida, pensada para atraer, convertir y crecer en un mundo saturado. No solo diseño páginas bonitas: creo estrategias digitales que generan clientes de verdad.
+    <p>Comencé mi carrera liderando estrategias de marketing y crecimiento para compañías como American Express, Cabify y Lamudi.</p>
+    <p>Hoy, aplico esa experiencia para ayudar a negocios reales a construir una presencia digital sólida, pensada para atraer, convertir y crecer en un mundo saturado. No solo diseño páginas bonitas: creo estrategias digitales que generan clientes de verdad.</p>
   </div>
 </section>
 
+<!-- Testimonios -->
 <section class="testimonials" id="testimonios" data-aos="fade-up">
   <h2>Testimonios</h2>
 
@@ -336,6 +338,7 @@ Hoy, aplico esa experiencia para ayudar a negocios reales a construir una presen
   </div>
 </section>
 
+<!-- Contacto -->
 <section class="contact" data-aos="fade-up">
   <h2>Contáctame hoy mismo</h2>
   <p>Demos el primer paso para hacer crecer tu presencia digital.</p>
