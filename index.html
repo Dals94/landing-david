@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>David López | Growth & Web Strategy</title>
 
+  <!-- Fuentes -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Librería de animaciones AOS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <!-- Google Analytics -->
@@ -17,6 +20,7 @@
     gtag('config', 'G-NFCZB9SW0N');
   </script>
 
+  <!-- Estilos generales -->
   <style>
     body {
       font-family: 'Poppins', sans-serif;
@@ -144,146 +148,9 @@
       font-size: 1em;
       margin-bottom: 20px;
     }
-
-    .about-photo {
-      width: 160px;
-      height: 160px;
-      object-fit: cover;
-      border-radius: 50%;
-      margin-bottom: 20px;
-      box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
-    }
-
-    .about-text {
-      max-width: 800px;
-      margin: 0 auto;
-      font-size: 1.2em;
-      line-height: 1.7em;
-      color: #333;
-      margin-top: 20px;
-    }
-
-    .testimonial {
-      background: #fff;
-      border-radius: 12px;
-      padding: 30px 20px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      max-width: 500px;
-      margin: 20px auto;
-      text-align: center;
-    }
-
-    .testimonial img {
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      margin-bottom: 15px;
-      object-fit: cover;
-    }
-
-    .testimonial-stars {
-      color: gold;
-      font-size: 1.2em;
-      margin-bottom: 10px;
-    }
-
-    .testimonial p {
-      font-style: italic;
-      color: #555;
-      margin: 0 0 10px;
-    }
-
-    .testimonial h4 {
-      margin: 5px 0 2px;
-      font-weight: 600;
-    }
-
-    .testimonial span {
-      font-size: 0.9em;
-      color: #0A66C2;
-    }
-
-    @keyframes bounceBtn {
-      0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0);
-      }
-      40% {
-        transform: translateY(-8px);
-      }
-      60% {
-        transform: translateY(-4px);
-      }
-    }
-
-    .btn-whatsapp, .btn-linkedin {
-      padding: 12px 24px;
-      border-radius: 25px;
-      font-weight: bold;
-      margin: 10px;
-      display: inline-block;
-      text-decoration: none;
-      transition: 0.3s;
-      font-size: 1.1em;
-    }
-
-    .btn-whatsapp {
-      background: #FFD700;
-      color: #000;
-      animation: bounceBtn 2s infinite;
-      animation-delay: 5s;
-    }
-
-    .btn-whatsapp:hover {
-      background: #e6c200;
-    }
-
-    .btn-linkedin {
-      background: #0A66C2;
-      color: #fff;
-    }
-
-    .btn-linkedin:hover {
-      background: #084d9b;
-    }
-
-    footer {
-      background: #222;
-      color: #ccc;
-      text-align: center;
-      padding: 30px 20px;
-      font-size: 0.9em;
-    }
-
-    @media(max-width:768px) {
-      section {
-        padding: 50px 15px;
-      }
-
-      .services {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .card {
-        width: 90%;
-        animation: none !important;
-      }
-
-      .card:hover {
-        transform: none;
-        animation: none;
-      }
-
-      .btn-whatsapp {
-        animation: bounceBtn 3s infinite;
-        animation-delay: 2s;
-      }
-    }
   </style>
 </head>
-
 <body>
-
 <header data-aos="fade-down">
   <div class="logo-top">David López | Growth & Web Strategy</div>
   <h1>Tu talento merece ser visible</h1>
@@ -291,10 +158,30 @@
   <a href="#servicios" class="btn-primary">Impulsa tu Presencia Digital</a>
 </header>
 
+<!-- Sección Servicios -->
 <section id="servicios" class="services">
-  <!-- Aquí tus tarjetas -->
-</section>
+  <div class="card" data-aos="fade-up">
+    <img src="https://images.pexels.com/photos/3183171/pexels-photo-3183171.jpeg" alt="Landing Estratégica">
+    <h3>Web Estratégica</h3>
+    <p>Convierte visitas en clientes con una página enfocada en captar ventas directo a tu WhatsApp.</p>
+    <a href="https://wa.me/5215536679617?text=Hola%20David,%20quiero%20una%20Landing%20Estratégica" class="btn-primary" target="_blank">Solicitar</a>
+  </div>
 
+  <div class="card" data-aos="fade-up" data-aos-delay="100">
+    <img src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg" alt="Mini Sitio Profesional">
+    <h3>Mini Sitio Profesional</h3>
+    <p>Tu sitio profesional optimizado para impulsar tu presencia online y atraer más clientes.</p>
+    <a href="https://wa.me/5215536679617?text=Hola%20David,%20quiero%20un%20Mini%20Sitio%20Profesional" class="btn-primary" target="_blank">Solicitar</a>
+  </div>
+
+  <div class="card" data-aos="fade-up" data-aos-delay="200">
+    <img src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg" alt="Acelerador Digital">
+    <h3>Acelerador Digital</h3>
+    <p>Un ecosistema digital completo para maximizar tu captación y acelerar tu crecimiento.</p>
+    <a href="https://wa.me/5215536679617?text=Hola%20David,%20quiero%20el%20Acelerador%20Digital" class="btn-primary" target="_blank">Solicitar</a>
+  </div>
+</section>
+<!-- Sección Quién Soy -->
 <section class="about" data-aos="fade-up">
   <div data-aos="zoom-in" data-aos-duration="1000">
     <img src="https://i.imgur.com/0GZ2HyO.png" alt="David López" class="about-photo">
@@ -308,24 +195,46 @@
     <p data-aos="fade-up" data-aos-delay="500">Hoy, aplico esa experiencia para ayudar a negocios reales a construir una presencia digital sólida, pensada para atraer, convertir y crecer en un mundo saturado. No solo diseño páginas bonitas: creo estrategias digitales que generan clientes de verdad.</p>
   </div>
 </section>
-
+<!-- Sección Testimonios -->
 <section class="testimonials" id="testimonios" data-aos="fade-up">
-  <!-- Testimonios aquí -->
+  <h2>Testimonios</h2>
+
+  <div class="testimonial" data-aos="fade-up">
+    <img src="https://images.pexels.com/photos/3775535/pexels-photo-3775535.jpeg" alt="Ana Gutiérrez">
+    <div class="testimonial-stars">⭐️⭐️⭐️⭐️⭐️</div>
+    <p>"David llevó nuestra estrategia digital a otro nivel. Ahora nuestros clientes llegan solos."</p>
+    <h4>Ana Gutiérrez</h4>
+    <span>Coach Ejecutiva</span>
+  </div>
+
+  <div class="testimonial" data-aos="fade-up" data-aos-delay="100">
+    <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg" alt="Luis Rodríguez">
+    <div class="testimonial-stars">⭐️⭐️⭐️⭐️⭐️</div>
+    <p>"Gracias a su enfoque estratégico, triplicamos nuestras ventas online en menos de 6 meses."</p>
+    <h4>Luis Rodríguez</h4>
+    <span>Asesor Financiero</span>
+  </div>
 </section>
 
+<!-- Sección Contacto -->
 <section class="contact" data-aos="fade-up">
-  <!-- Contacto aquí -->
+  <h2>Contáctame hoy mismo</h2>
+  <p>Demos el primer paso para hacer crecer tu presencia digital.</p>
+  <a href="https://wa.me/5215536679617?text=Hola%20David,%20quiero%20más%20información%20sobre%20tu%20servicio%20web." target="_blank" class="btn-whatsapp">Escríbeme por WhatsApp</a>
+  <a href="https://www.linkedin.com/in/david-abraham-lopez/" target="_blank" class="btn-linkedin">Conectemos en LinkedIn</a>
 </section>
 
+<!-- Footer -->
 <footer>
   © 2025 David López | Growth & Web Strategy. Todos los derechos reservados.
 </footer>
 
+<!-- Librerías y Scripts -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init({ duration: 1000, once: true });
 
-  // Contador de experiencia solo cuando aparece
+  // Contador de experiencia activado solo al hacer scroll
   let counterStarted = false;
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
