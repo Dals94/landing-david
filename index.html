@@ -4,9 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>David López | Growth & Web Strategy</title>
-  
-  <!-- Favicon -->
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -24,25 +21,24 @@
     body {
       font-family: 'Poppins', sans-serif;
       background-color: #ffffff;
-      color: #333;
       margin: 0;
       padding: 0;
       scroll-behavior: smooth;
     }
 
     header {
-      position: relative;
       background: url('https://images.pexels.com/photos/3182761/pexels-photo-3182761.jpeg') no-repeat center center/cover;
       color: white;
-      padding: 120px 20px 100px;
       text-align: center;
+      padding: 120px 20px;
+      position: relative;
     }
 
     header::after {
       content: "";
       position: absolute;
       top: 0; left: 0; right: 0; bottom: 0;
-      background: linear-gradient(rgba(10,102,194,0.5), rgba(10,102,194,0.1));
+      background: rgba(0, 0, 0, 0.5);
       z-index: 0;
     }
 
@@ -53,43 +49,34 @@
 
     header h1 {
       font-size: 2.8em;
-      margin-bottom: 15px;
-      text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+      margin-bottom: 10px;
     }
 
     header p {
       font-size: 1.3em;
-      text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
     }
 
     .btn-primary {
       background: #0A66C2;
-      color: #ffffff;
-      padding: 14px 32px;
-      border: none;
-      margin-top: 25px;
-      font-weight: bold;
-      font-size: 1em;
+      color: #fff;
+      padding: 14px 30px;
       border-radius: 30px;
-      cursor: pointer;
-      transition: all 0.3s ease;
       text-decoration: none;
+      font-weight: bold;
       display: inline-block;
+      margin-top: 20px;
+      transition: background 0.3s;
     }
 
     .btn-primary:hover {
       background: #084d9b;
-      transform: scale(1.05);
     }
 
     section {
-      background-color: #f9fafb;
       padding: 80px 20px;
       text-align: center;
-    }
-
-    .services, .about, .testimonials, .contact {
-      padding: 80px 20px;
+      background: #f9fafb;
+      background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
     }
 
     .services {
@@ -101,18 +88,15 @@
 
     .card {
       background: white;
-      border: 1px solid #e0e0e0;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       width: 300px;
-      text-align: center;
       padding: 30px 20px;
-      transition: all 0.3s ease;
+      transition: transform 0.3s;
     }
 
     .card:hover {
-      transform: translateY(-10px) scale(1.02);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      transform: translateY(-10px);
     }
 
     .card img {
@@ -120,17 +104,16 @@
       height: 200px;
       object-fit: cover;
       border-radius: 8px;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
     }
 
     .card h3 {
       margin-bottom: 10px;
-      font-size: 1.5em;
     }
 
     .card p {
       font-size: 1em;
-      min-height: 80px;
+      margin-bottom: 20px;
     }
 
     .about-photo {
@@ -139,86 +122,66 @@
       object-fit: cover;
       border-radius: 50%;
       margin-bottom: 20px;
-      box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
     }
 
-    .about h2, .testimonials h2, .contact h2 {
-      font-size: 2em;
-      margin-bottom: 15px;
-    }
-
-    .about p, .testimonials p, .contact p {
-      font-size: 1.1em;
-      max-width: 600px;
-      margin: 0 auto 30px;
-    }
-
-    .testimonial {
-      max-width: 600px;
-      margin: 20px auto;
-      font-size: 1.1em;
+    .testimonials p {
       font-style: italic;
       color: #555;
+      margin: 0 0 10px;
     }
 
-    .testimonial h4 {
-      margin-top: 10px;
-      font-weight: bold;
-      color: #0A66C2;
+    .testimonial-stars {
+      color: gold;
+      font-size: 1.2em;
+      margin-bottom: 10px;
     }
 
     .btn-whatsapp {
-      background-color: #FFD700;
+      background: #FFD700;
       color: #000;
       padding: 12px 24px;
       font-size: 1.1em;
       border-radius: 25px;
       text-decoration: none;
       font-weight: bold;
+      margin: 10px;
       display: inline-block;
-      margin: 10px 10px;
-      transition: all 0.3s ease;
+      transition: 0.3s;
     }
 
     .btn-whatsapp:hover {
-      background-color: #e6c200;
-      transform: scale(1.05);
+      background: #e6c200;
     }
 
     .btn-linkedin {
-      background-color: #0A66C2;
+      background: #0A66C2;
       color: #fff;
       padding: 12px 24px;
       font-size: 1.1em;
       border-radius: 25px;
       text-decoration: none;
       font-weight: bold;
+      margin: 10px;
       display: inline-block;
-      margin: 10px 10px;
-      transition: all 0.3s ease;
+      transition: 0.3s;
     }
 
     .btn-linkedin:hover {
-      background-color: #084d9b;
-      transform: scale(1.05);
+      background: #084d9b;
     }
 
     footer {
-      background-color: #222;
+      background: #222;
       color: #ccc;
       text-align: center;
       padding: 30px 20px;
       font-size: 0.9em;
     }
 
-    @media (max-width: 768px) {
+    @media(max-width:768px) {
       .services {
         flex-direction: column;
-        align-items: center;
-      }
-
-      header {
-        padding: 80px 20px 60px;
       }
     }
   </style>
@@ -226,66 +189,68 @@
 
 <body>
 
-  <header data-aos="fade-in">
-    <h1>Tu talento merece ser visible</h1>
-    <p>Construyamos juntos tu crecimiento</p>
-    <a href="#servicios" class="btn-primary">Impulsa tu Presencia Digital</a>
-  </header>
+<header>
+  <h1>Tu talento merece ser visible</h1>
+  <p>Construyamos juntos tu crecimiento</p>
+  <a href="#servicios" class="btn-primary">Impulsa tu Presencia Digital</a>
+</header>
 
-  <section id="servicios" class="services">
-    <div class="card" data-aos="fade-up">
-      <img src="https://images.pexels.com/photos/3183171/pexels-photo-3183171.jpeg" alt="Landing Estratégica">
-      <h3>Landing Estratégica</h3>
-      <p>Convierte visitas en clientes con una página enfocada en captar leads directo a tu WhatsApp.</p>
-      <a href="https://wa.me/5215536679617?text=Hola%20David,%20quiero%20una%20Landing%20Estratégica" class="btn-primary" target="_blank">Solicitar</a>
-    </div>
-    <div class="card" data-aos="fade-up" data-aos-delay="100">
-      <img src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg" alt="Mini Sitio Profesional">
-      <h3>Mini Sitio Profesional</h3>
-      <p>Tu sitio profesional optimizado para impulsar tu presencia online y atraer más clientes.</p>
-      <a href="https://wa.me/5215536679617?text=Hola%20David,%20quiero%20un%20Mini%20Sitio%20Profesional" class="btn-primary" target="_blank">Solicitar</a>
-    </div>
-    <div class="card" data-aos="fade-up" data-aos-delay="200">
-      <img src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg" alt="Acelerador Digital">
-      <h3>Acelerador Digital</h3>
-      <p>Un ecosistema digital completo para maximizar tu captación y acelerar tu crecimiento.</p>
-      <a href="https://wa.me/5215536679617?text=Hola%20David,%20quiero%20el%20Acelerador%20Digital" class="btn-primary" target="_blank">Solicitar</a>
-    </div>
-  </section>
+<section id="servicios" class="services">
+  <div class="card">
+    <img src="https://images.pexels.com/photos/3183171/pexels-photo-3183171.jpeg" alt="Landing Estratégica">
+    <h3>Landing Estratégica</h3>
+    <p>Convierte visitas en clientes con una página enfocada en captar leads directo a tu WhatsApp.</p>
+    <a href="https://wa.me/5215536679617" class="btn-primary" target="_blank">Solicitar</a>
+  </div>
 
-  <section class="about" data-aos="fade-up">
-    <img src="https://i.imgur.com/your_image_link.jpg" alt="David López" class="about-photo">
-    <h2>¿Quién soy?</h2>
-    <p>Con más de 13 años liderando Marketing y Growth en empresas digitales líderes de LATAM como American Express, Cabify y Lamudi, mi misión es ayudarte a construir presencia online que genere verdadero crecimiento de negocio.</p>
-  </section>
+  <div class="card">
+    <img src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg" alt="Mini Sitio Profesional">
+    <h3>Mini Sitio Profesional</h3>
+    <p>Tu sitio profesional optimizado para impulsar tu presencia online y atraer más clientes.</p>
+    <a href="https://wa.me/5215536679617" class="btn-primary" target="_blank">Solicitar</a>
+  </div>
 
-  <section class="testimonials" data-aos="fade-up">
-    <h2>Testimonios</h2>
-    <div class="testimonial">
-      <p>"David llevó nuestra estrategia digital a otro nivel. Ahora nuestros clientes llegan solos."</p>
-      <h4>– Ana Gutiérrez, Coach Ejecutiva</h4>
-    </div>
-    <div class="testimonial">
-      <p>"Gracias a su enfoque estratégico, triplicamos nuestras ventas online en menos de 6 meses."</p>
-      <h4>– Luis Rodríguez, Asesor Financiero</h4>
-    </div>
-  </section>
+  <div class="card">
+    <img src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg" alt="Acelerador Digital">
+    <h3>Acelerador Digital</h3>
+    <p>Un ecosistema digital completo para maximizar tu captación y acelerar tu crecimiento.</p>
+    <a href="https://wa.me/5215536679617" class="btn-primary" target="_blank">Solicitar</a>
+  </div>
+</section>
 
-  <section class="contact" data-aos="fade-up">
-    <h2>Contáctame hoy mismo</h2>
-    <p>Demos el primer paso para hacer crecer tu presencia digital.</p>
-    <a href="https://wa.me/5215536679617?text=Hola%20David,%20quiero%20más%20información%20sobre%20tu%20servicio%20web." target="_blank" class="btn-whatsapp">Escríbeme por WhatsApp</a>
-    <a href="https://www.linkedin.com/in/david-abraham-lopez/" target="_blank" class="btn-linkedin">Conectemos en LinkedIn</a>
-  </section>
+<section class="about">
+  <img src="https://i.imgur.com/0GZ2HyO.png" alt="David López" class="about-photo">
+  <h2>¿Quién soy?</h2>
+  <p>Con más de 13 años liderando Marketing y Growth en empresas digitales líderes de LATAM como American Express, Cabify y Lamudi, mi misión es ayudarte a construir una presencia online que genere verdadero crecimiento de negocio.</p>
+</section>
 
-  <footer>
-    © 2025 David López | Growth & Web Strategy. Todos los derechos reservados.
-  </footer>
+<section class="testimonials">
+  <h2>Testimonios</h2>
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({ duration: 1000, once: true });
-  </script>
+  <div class="testimonial-stars">⭐️⭐️⭐️⭐️⭐️</div>
+  <p>"David llevó nuestra estrategia digital a otro nivel. Ahora nuestros clientes llegan solos."</p>
+  <h4>– Ana Gutiérrez, Coach Ejecutiva</h4>
+
+  <div class="testimonial-stars">⭐️⭐️⭐️⭐️⭐️</div>
+  <p>"Gracias a su enfoque estratégico, triplicamos nuestras ventas online en menos de 6 meses."</p>
+  <h4>– Luis Rodríguez, Asesor Financiero</h4>
+</section>
+
+<section class="contact">
+  <h2>Contáctame hoy mismo</h2>
+  <p>Demos el primer paso para hacer crecer tu presencia digital.</p>
+  <a href="https://wa.me/5215536679617" target="_blank" class="btn-whatsapp">Escríbeme por WhatsApp</a>
+  <a href="https://www.linkedin.com/in/david-abraham-lopez/" target="_blank" class="btn-linkedin">Conectemos en LinkedIn</a>
+</section>
+
+<footer>
+  © 2025 David López | Growth & Web Strategy. Todos los derechos reservados.
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000, once: true });
+</script>
 
 </body>
 </html>
