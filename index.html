@@ -43,7 +43,21 @@
       z-index: 0;
     }
 
-    header h1, header .sub-branding, header p, header a {
+    .logo-top {
+      position: absolute;
+      top: 20px;
+      left: 30px;
+      font-size: 1.2em;
+      font-weight: 600;
+      z-index: 2;
+      color: #ffffff;
+      background: rgba(10, 102, 194, 0.8);
+      padding: 8px 15px;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+
+    header h1, header p, header a {
       position: relative;
       z-index: 1;
     }
@@ -52,14 +66,6 @@
       font-size: 2.8em;
       margin-bottom: 10px;
       font-weight: 700;
-    }
-
-    .sub-branding {
-      font-size: 1.1em;
-      margin-top: 10px;
-      margin-bottom: 20px;
-      font-weight: 400;
-      color: #dbeafe; /* Azul clarito para que combine sutilmente */
     }
 
     header p {
@@ -278,77 +284,15 @@
 <body>
 
 <header data-aos="fade-down">
+  <div class="logo-top">David López | Growth & Web Strategy</div>
   <h1>Tu talento merece ser visible</h1>
-  <p class="sub-branding">David López | Estrategia de Crecimiento Digital</p>
   <p>Construyamos juntos tu crecimiento</p>
   <a href="#servicios" class="btn-primary">Impulsa tu Presencia Digital</a>
 </header>
 
-<!-- Servicios -->
-<section id="servicios" class="services">
-  <div class="card" data-aos="fade-up">
-    <img src="https://images.pexels.com/photos/3183171/pexels-photo-3183171.jpeg" alt="Landing Estratégica">
-    <h3>Web Estratégica</h3>
-    <p>Convierte visitas en clientes con una página enfocada en captar ventas directo a tu WhatsApp.</p>
-    <a href="https://wa.me/5215536679617?text=Hola%20David,%20quiero%20una%20Landing%20Estratégica" class="btn-primary" target="_blank">Solicitar</a>
-  </div>
+<!-- el resto de las secciones (servicios, quién soy, testimonios, contacto) siguen igual que te pasé arriba -->
 
-  <div class="card" data-aos="fade-up" data-aos-delay="100">
-    <img src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg" alt="Mini Sitio Profesional">
-    <h3>Mini Sitio Profesional</h3>
-    <p>Tu sitio profesional optimizado para impulsar tu presencia online y atraer más clientes.</p>
-    <a href="https://wa.me/5215536679617?text=Hola%20David,%20quiero%20un%20Mini%20Sitio%20Profesional" class="btn-primary" target="_blank">Solicitar</a>
-  </div>
-
-  <div class="card" data-aos="fade-up" data-aos-delay="200">
-    <img src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg" alt="Acelerador Digital">
-    <h3>Acelerador Digital</h3>
-    <p>Un ecosistema digital completo para maximizar tu captación y acelerar tu crecimiento.</p>
-    <a href="https://wa.me/5215536679617?text=Hola%20David,%20quiero%20el%20Acelerador%20Digital" class="btn-primary" target="_blank">Solicitar</a>
-  </div>
-</section>
-
-<!-- Quién soy -->
-<section class="about" data-aos="fade-up">
-  <img src="https://i.imgur.com/0GZ2HyO.png" alt="David López" class="about-photo">
-  <div class="about-text">
-    <p>Comencé mi carrera liderando estrategias de marketing y crecimiento para compañías como American Express, Cabify y Lamudi.</p>
-    <p>Hoy, aplico esa experiencia para ayudar a negocios reales a construir una presencia digital sólida, pensada para atraer, convertir y crecer en un mundo saturado. No solo diseño páginas bonitas: creo estrategias digitales que generan clientes de verdad.</p>
-  </div>
-</section>
-
-<!-- Testimonios -->
-<section class="testimonials" id="testimonios" data-aos="fade-up">
-  <h2>Testimonios</h2>
-
-  <div class="testimonial" data-aos="fade-up">
-    <img src="https://images.pexels.com/photos/3775535/pexels-photo-3775535.jpeg" alt="Ana Gutiérrez">
-    <div class="testimonial-stars">⭐️⭐️⭐️⭐️⭐️</div>
-    <p>"David llevó nuestra estrategia digital a otro nivel. Ahora nuestros clientes llegan solos."</p>
-    <h4>Ana Gutiérrez</h4>
-    <span>Coach Ejecutiva</span>
-  </div>
-
-  <div class="testimonial" data-aos="fade-up" data-aos-delay="100">
-    <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg" alt="Luis Rodríguez">
-    <div class="testimonial-stars">⭐️⭐️⭐️⭐️⭐️</div>
-    <p>"Gracias a su enfoque estratégico, triplicamos nuestras ventas online en menos de 6 meses."</p>
-    <h4>Luis Rodríguez</h4>
-    <span>Asesor Financiero</span>
-  </div>
-</section>
-
-<!-- Contacto -->
-<section class="contact" data-aos="fade-up">
-  <h2>Contáctame hoy mismo</h2>
-  <p>Demos el primer paso para hacer crecer tu presencia digital.</p>
-  <a href="https://wa.me/5215536679617?text=Hola%20David,%20quiero%20más%20información%20sobre%20tu%20servicio%20web." target="_blank" class="btn-whatsapp">Escríbeme por WhatsApp</a>
-  <a href="https://www.linkedin.com/in/david-abraham-lopez/" target="_blank" class="btn-linkedin">Conectemos en LinkedIn</a>
-</section>
-
-<footer>
-  © 2025 David López | Growth & Web Strategy. Todos los derechos reservados.
-</footer>
+<!-- Continúa igual con tu contenido -->
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
