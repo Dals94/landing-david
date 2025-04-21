@@ -291,12 +291,10 @@
   <a href="#servicios" class="btn-primary">Impulsa tu Presencia Digital</a>
 </header>
 
-<!-- Servicios -->
 <section id="servicios" class="services">
-  <!-- Tus cards de servicios aquí -->
+  <!-- Aquí tus tarjetas -->
 </section>
 
-<!-- Quién Soy (nuevo dinámico) -->
 <section class="about" data-aos="fade-up">
   <div data-aos="zoom-in" data-aos-duration="1000">
     <img src="https://i.imgur.com/0GZ2HyO.png" alt="David López" class="about-photo">
@@ -311,12 +309,10 @@
   </div>
 </section>
 
-<!-- Testimonios -->
 <section class="testimonials" id="testimonios" data-aos="fade-up">
   <!-- Testimonios aquí -->
 </section>
 
-<!-- Contacto -->
 <section class="contact" data-aos="fade-up">
   <!-- Contacto aquí -->
 </section>
@@ -325,23 +321,31 @@
   © 2025 David López | Growth & Web Strategy. Todos los derechos reservados.
 </footer>
 
-<!-- Librerías -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init({ duration: 1000, once: true });
 
-  document.addEventListener('DOMContentLoaded', () => {
-    let counter = document.getElementById('counter');
-    let count = 0;
-    let target = 13;
-    let interval = setInterval(() => {
-      count++;
-      counter.innerText = count + '+';
-      if (count >= target) {
-        clearInterval(interval);
+  // Contador de experiencia solo cuando aparece
+  let counterStarted = false;
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !counterStarted) {
+        counterStarted = true;
+        let counter = document.getElementById('counter');
+        let count = 0;
+        let target = 13;
+        let interval = setInterval(() => {
+          count++;
+          counter.innerText = count + '+';
+          if (count >= target) {
+            clearInterval(interval);
+          }
+        }, 100);
       }
-    }, 100);
-  });
+    });
+  }, { threshold: 0.5 });
+
+  observer.observe(document.getElementById('counter'));
 </script>
 
 </body>
