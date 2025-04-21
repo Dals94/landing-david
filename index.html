@@ -126,29 +126,60 @@
       box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
     }
 
+    .testimonial {
+      background: white;
+      border-radius: 12px;
+      padding: 30px 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 500px;
+      margin: 20px auto;
+      text-align: center;
+    }
+
+    .testimonial img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      object-fit: cover;
+    }
+
     .testimonial-stars {
       color: gold;
       font-size: 1.2em;
       margin-bottom: 10px;
     }
 
-    .testimonials p {
+    .testimonial p {
       font-style: italic;
       color: #555;
       margin: 0 0 10px;
     }
 
-    .btn-whatsapp {
-      background: #FFD700;
-      color: #000;
+    .testimonial h4 {
+      margin: 5px 0 2px;
+      font-weight: 600;
+    }
+
+    .testimonial span {
+      font-size: 0.9em;
+      color: #0A66C2;
+    }
+
+    .btn-whatsapp, .btn-linkedin {
       padding: 12px 24px;
-      font-size: 1.1em;
       border-radius: 25px;
-      text-decoration: none;
       font-weight: bold;
       margin: 10px;
       display: inline-block;
+      text-decoration: none;
       transition: 0.3s;
+      font-size: 1.1em;
+    }
+
+    .btn-whatsapp {
+      background: #FFD700;
+      color: #000;
     }
 
     .btn-whatsapp:hover {
@@ -158,14 +189,6 @@
     .btn-linkedin {
       background: #0A66C2;
       color: #fff;
-      padding: 12px 24px;
-      font-size: 1.1em;
-      border-radius: 25px;
-      text-decoration: none;
-      font-weight: bold;
-      margin: 10px;
-      display: inline-block;
-      transition: 0.3s;
     }
 
     .btn-linkedin:hover {
@@ -234,16 +257,24 @@
   <p>Con más de 13 años liderando Marketing y Growth en empresas digitales líderes de LATAM como American Express, Cabify y Lamudi, mi misión es ayudarte a construir una presencia online que genere verdadero crecimiento de negocio.</p>
 </section>
 
-<section class="testimonials" data-aos="fade-up">
+<section class="testimonials" id="testimonios" data-aos="fade-up">
   <h2>Testimonios</h2>
 
-  <div class="testimonial-stars">⭐️⭐️⭐️⭐️⭐️</div>
-  <p>"David llevó nuestra estrategia digital a otro nivel. Ahora nuestros clientes llegan solos."</p>
-  <h4>– Ana Gutiérrez, Coach Ejecutiva</h4>
+  <div class="testimonial" data-aos="fade-up">
+    <img src="https://images.pexels.com/photos/3775535/pexels-photo-3775535.jpeg" alt="Ana Gutiérrez">
+    <div class="testimonial-stars">⭐️⭐️⭐️⭐️⭐️</div>
+    <p>"David llevó nuestra estrategia digital a otro nivel. Ahora nuestros clientes llegan solos."</p>
+    <h4>Ana Gutiérrez</h4>
+    <span>Coach Ejecutiva</span>
+  </div>
 
-  <div class="testimonial-stars">⭐️⭐️⭐️⭐️⭐️</div>
-  <p>"Gracias a su enfoque estratégico, triplicamos nuestras ventas online en menos de 6 meses."</p>
-  <h4>– Luis Rodríguez, Asesor Financiero</h4>
+  <div class="testimonial" data-aos="fade-up" data-aos-delay="100">
+    <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg" alt="Luis Rodríguez">
+    <div class="testimonial-stars">⭐️⭐️⭐️⭐️⭐️</div>
+    <p>"Gracias a su enfoque estratégico, triplicamos nuestras ventas online en menos de 6 meses."</p>
+    <h4>Luis Rodríguez</h4>
+    <span>Asesor Financiero</span>
+  </div>
 </section>
 
 <section class="contact" data-aos="fade-up">
