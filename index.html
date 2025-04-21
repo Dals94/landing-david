@@ -82,12 +82,21 @@
       transform: scale(1.05);
     }
 
+    section {
+      background-color: #f9fafb;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .services, .about, .testimonials, .contact {
+      padding: 80px 20px;
+    }
+
     .services {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 30px;
-      padding: 80px 20px;
     }
 
     .card {
@@ -124,12 +133,6 @@
       min-height: 80px;
     }
 
-    .about {
-      background: #f6f9fc;
-      text-align: center;
-      padding: 60px 20px;
-    }
-
     .about-photo {
       width: 160px;
       height: 160px;
@@ -139,26 +142,15 @@
       box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
     }
 
-    .about h2 {
+    .about h2, .testimonials h2, .contact h2 {
       font-size: 2em;
       margin-bottom: 15px;
     }
 
-    .about p {
+    .about p, .testimonials p, .contact p {
       font-size: 1.1em;
       max-width: 600px;
-      margin: 0 auto;
-    }
-
-    .testimonials {
-      background: #ffffff;
-      text-align: center;
-      padding: 60px 20px;
-    }
-
-    .testimonials h2 {
-      font-size: 2em;
-      margin-bottom: 30px;
+      margin: 0 auto 30px;
     }
 
     .testimonial {
@@ -173,22 +165,6 @@
       margin-top: 10px;
       font-weight: bold;
       color: #0A66C2;
-    }
-
-    .contact {
-      background: #ffffff;
-      text-align: center;
-      padding: 80px 20px;
-    }
-
-    .contact h2 {
-      font-size: 2em;
-      margin-bottom: 15px;
-    }
-
-    .contact p {
-      margin-bottom: 20px;
-      font-size: 1.1em;
     }
 
     .btn-whatsapp {
@@ -240,6 +216,7 @@
         flex-direction: column;
         align-items: center;
       }
+
       header {
         padding: 80px 20px 60px;
       }
@@ -277,7 +254,7 @@
   </section>
 
   <section class="about" data-aos="fade-up">
-    <img src="0A30233C-0323-447A-9BB3-ED4F0799461D.png" alt="David López" class="about-photo">
+    <img src="https://i.imgur.com/your_image_link.jpg" alt="David López" class="about-photo">
     <h2>¿Quién soy?</h2>
     <p>Con más de 13 años liderando Marketing y Growth en empresas digitales líderes de LATAM como American Express, Cabify y Lamudi, mi misión es ayudarte a construir presencia online que genere verdadero crecimiento de negocio.</p>
   </section>
