@@ -372,6 +372,47 @@
 
   observer.observe(document.getElementById('counter'));
 </script>
+<!-- Mini Chat Flotante -->
+<div id="mini-chat" style="position: fixed; bottom: 20px; right: 20px; width: 300px; background: #0B1B32; color: white; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.3); font-family: 'Poppins', sans-serif; z-index:9999;">
+  <div style="background: #FFD700; color: #0B1B32; padding: 15px; font-weight: bold; text-align: center;">
+    💬 PixelManda Chat
+  </div>
+  <div style="padding: 15px; display: flex; flex-direction: column; gap: 10px;">
+    <div>Hola! ¿Cómo puedo ayudarte?</div>
 
+    <label for="servicio">¿Qué tipo de servicio deseas?</label>
+    <select id="servicio" style="padding:8px; border-radius:10px; border:none; font-size:0.9em;">
+      <option value="">Selecciona...</option>
+      <option value="Web simple">Web simple</option>
+      <option value="Web corporativa con múltiples secciones">Web corporativa con múltiples secciones</option>
+      <option value="Estrategia de posicionamiento completo">Estrategia de posicionamiento completo</option>
+    </select>
+
+    <label for="negocio">¿A qué te dedicas?</label>
+    <textarea id="negocio" placeholder="Platícame de tu negocio..." rows="3" style="padding:8px; border-radius:10px; border:none; font-size:0.9em; resize:none;"></textarea>
+
+    <button onclick="enviarWhatsApp()" style="background:#FFD700; color:#0B1B32; border:none; border-radius:10px; padding:10px; font-weight:bold; cursor:pointer; transition:0.3s;">
+      Enviar a WhatsApp
+    </button>
+
+    <div style="font-size:0.8em; color:#ccc; text-align:center;">Pronto estarás en contacto con alguien.</div>
+  </div>
+</div>
+
+<!-- Script para enviar a WhatsApp -->
+<script>
+  function enviarWhatsApp() {
+    var servicio = document.getElementById('servicio').value;
+    var negocio = document.getElementById('negocio').value.trim();
+    if (!servicio || !negocio) {
+      alert('Por favor completa todas las preguntas :)');
+      return;
+    }
+    var mensaje = `Hola! Me interesa el servicio: *${servicio}*.\nTe cuento de mi negocio: *${negocio}*.\nEspero tu respuesta :)`;
+    var telefono = "5215536679617"; // <-- Aquí pones TU número
+    var url = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
+    window.open(url, '_blank');
+  }
+</script>
 </body>
 </html>
