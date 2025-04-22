@@ -11,7 +11,7 @@
   <!-- Librería de animaciones AOS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-  <!-- Google Analytics (PixelManda) -->
+  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-JN2HL63CNK"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -20,7 +20,7 @@
     gtag('config', 'G-JN2HL63CNK');
   </script>
 
-  <!-- Estilos hermosos y anti-optimización -->
+  <!-- Estilos generales -->
   <style>
     body {
       font-family: 'Poppins', sans-serif;
@@ -86,26 +86,12 @@
       font-weight: bold;
       display: inline-block;
       margin-top: 25px;
-      transition: background 0.3s, transform 0.3s;
+      transition: background 0.3s;
       font-size: 1.1em;
     }
 
     .btn-primary:hover {
       background: #C6A700;
-      transform: scale(1.05);
-    }
-
-    /* Animaciones personalizadas */
-    @keyframes bounceCard {
-      0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-      40% { transform: translateY(-10px); }
-      60% { transform: translateY(-5px); }
-    }
-
-    @keyframes bounceBtn {
-      0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-      40% { transform: translateY(-8px); }
-      60% { transform: translateY(-4px); }
     }
   </style>
 </head>
@@ -113,35 +99,31 @@
 <body>
 
 <header data-aos="fade-down">
-  <a href="#" class="logo-top">PixelManda | Estrategia Web Profesional</a>
+  <div class="logo-top">PixelManda | Estrategia Web Profesional</div>
   <h1>Conquista tu espacio digital</h1>
   <p>Diseñamos webs estratégicas que capturan clientes.</p>
   <a href="#servicios" class="btn-primary">Agenda tu conquista digital</a>
 </header>
-
 <section id="servicios" class="services">
-  <h2 style="text-align:center; font-size:2.2em; color:#0B1B32; margin:50px 0;">Nuestros Servicios</h2>
-  <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:30px;">
-        <div class="card" data-aos="fade-up">
-      <img src="https://images.pexels.com/photos/3183171/pexels-photo-3183171.jpeg" alt="Landing Estratégica">
-      <h3>Landing Estratégica</h3>
-      <p>Diseñamos landing pages enfocadas en capturar clientes y dominar tu nicho.</p>
-      <a href="https://wa.me/5215536679617?text=Hola%20PixelManda,%20quiero%20una%20Landing%20Estratégica" class="btn-primary" target="_blank">Solicitar</a>
-    </div>
+  <div class="card" data-aos="fade-up">
+    <img src="https://images.pexels.com/photos/3183171/pexels-photo-3183171.jpeg" alt="Landing Estratégica">
+    <h3>Landing Estratégica</h3>
+    <p>Diseñamos landing pages enfocadas en capturar clientes y dominar tu nicho.</p>
+    <a href="https://wa.me/5215536679617?text=Hola%20PixelManda,%20quiero%20una%20Landing%20Estratégica" class="btn-primary" target="_blank">Solicitar</a>
+  </div>
 
-    <div class="card" data-aos="fade-up" data-aos-delay="100">
-      <img src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg" alt="Mini Sitio Profesional">
-      <h3>Mini Sitio Profesional</h3>
-      <p>Webs estratégicas de múltiples secciones para elevar tu autoridad y convertir.</p>
-      <a href="https://wa.me/5215536679617?text=Hola%20PixelManda,%20quiero%20un%20Mini%20Sitio%20Profesional" class="btn-primary" target="_blank">Solicitar</a>
-    </div>
+  <div class="card" data-aos="fade-up" data-aos-delay="100">
+    <img src="https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg" alt="Mini Sitio Profesional">
+    <h3>Mini Sitio Profesional</h3>
+    <p>Webs estratégicas de múltiples secciones para elevar tu autoridad y convertir.</p>
+    <a href="https://wa.me/5215536679617?text=Hola%20PixelManda,%20quiero%20un%20Mini%20Sitio%20Profesional" class="btn-primary" target="_blank">Solicitar</a>
+  </div>
 
-    <div class="card" data-aos="fade-up" data-aos-delay="200">
-      <img src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg" alt="Acelerador Digital">
-      <h3>Acelerador Digital</h3>
-      <p>Un ecosistema de estrategia, presencia y conversión diseñado para tu conquista digital.</p>
-      <a href="https://wa.me/5215536679617?text=Hola%20PixelManda,%20quiero%20el%20Acelerador%20Digital" class="btn-primary" target="_blank">Solicitar</a>
-    </div>
+  <div class="card" data-aos="fade-up" data-aos-delay="200">
+    <img src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg" alt="Acelerador Digital">
+    <h3>Acelerador Digital</h3>
+    <p>Un ecosistema de estrategia, presencia y conversión diseñado para tu conquista digital.</p>
+    <a href="https://wa.me/5215536679617?text=Hola%20PixelManda,%20quiero%20el%20Acelerador%20Digital" class="btn-primary" target="_blank">Solicitar</a>
   </div>
 </section>
 
@@ -150,23 +132,23 @@
   <div data-aos="zoom-in" data-aos-duration="1000">
     <img src="https://i.imgur.com/0GZ2HyO.png" alt="David López" class="about-photo">
     <div class="subtitle-owner">David López</div>
-    <div class="subtitle-role">Founder de PixelManda & Web Strategist</div>
+    <div class="subtitle-role">Founder & Web Strategist</div>
   </div>
 
   <h3 id="counter" style="font-size: 2em; color: #FFD700; margin-top: 20px;" data-aos="fade-up" data-aos-delay="100">0+</h3>
-  <p style="font-weight: 600; margin-bottom: 30px; color: #0B1B32;" data-aos="fade-up" data-aos-delay="200">Años impulsando estrategias digitales</p>
+  <p style="font-weight: 600; margin-bottom: 30px; color: #0B1B32;" data-aos="fade-up" data-aos-delay="200">
+    Años impulsando estrategias digitales
+  </p>
 
   <div class="about-text">
     <p data-aos="fade-up" data-aos-delay="300">
-      Después de liderar estrategias de crecimiento en compañías como American Express, Cabify y Lamudi,
-      hoy desarrollo estrategias web de conquista para profesionistas y negocios bajo la firma de PixelManda.
+      Después de liderar estrategias de crecimiento en compañías como American Express, Cabify y Lamudi, hoy desarrollo estrategias web de conquista para profesionistas y negocios.
     </p>
     <p data-aos="fade-up" data-aos-delay="500">
       No solo diseño páginas web: construyo bases digitales sólidas para dominar mercados saturados.
     </p>
   </div>
 </section>
-
 <!-- Sección Testimonios -->
 <section class="testimonials" id="testimonios" data-aos="fade-up">
   <h2>Testimonios</h2>
@@ -191,13 +173,15 @@
 <!-- Sección Contacto -->
 <section class="contact" data-aos="fade-up">
   <h2>Agenda tu conquista digital</h2>
-  <p>Demos el primer paso para que tu negocio conquiste Internet con PixelManda.</p>
+  <p>Demos el primer paso para que tu negocio conquiste Internet.</p>
 
   <div class="contact-buttons">
-    <a href="https://wa.me/5215536679617?text=Hola%20PixelManda,%20quiero%20más%20información%20sobre%20tu%20estrategia%20digital" target="_blank" class="btn-whatsapp">Escríbeme por WhatsApp</a>
+    <a href="https://wa.me/5215536679617?text=Hola%20PixelManda,%20quiero%20más%20información%20sobre%20PixelManda." target="_blank" class="btn-whatsapp">Escríbeme por WhatsApp</a>
     <a href="https://www.linkedin.com/in/david-abraham-lopez/" target="_blank" class="btn-linkedin">Conectemos en LinkedIn</a>
   </div>
-</section><!-- Footer -->
+</section>
+
+<!-- Footer -->
 <footer style="background: #0B1B32; color: #FFD700; text-align: center; padding: 30px 20px; font-size: 0.9em;">
   © 2025 PixelManda | Estrategia Web Profesional. Todos los derechos reservados.
 </footer>
@@ -205,13 +189,8 @@
 <!-- Librerías y Scripts -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-  // Inicializar AOS (Animaciones al hacer scroll)
-  AOS.init({ 
-    duration: 1000, 
-    once: true 
-  });
+  AOS.init({ duration: 1000, once: true });
 
-  // Contador de años en el "Quién Soy"
   let counterStarted = false;
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
@@ -219,7 +198,7 @@
         counterStarted = true;
         let counter = document.getElementById('counter');
         let count = 0;
-        let target = 13; // <-- Aquí es tu numerito mágico
+        let target = 13;
         let interval = setInterval(() => {
           count++;
           counter.innerText = count + '+';
