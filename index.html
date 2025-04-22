@@ -396,15 +396,13 @@
     <label for="negocio">¿A qué te dedicas?</label>
     <textarea id="negocio" placeholder="Platícame de tu negocio..." rows="3" style="margin-top: 8px; padding: 8px; width: 100%; border-radius: 10px; border: none; resize: none;"></textarea>
     <button onclick="enviarWhatsApp()" style="margin-top: 15px; background: #FFD700; color: #0B1B32; border: none; border-radius: 10px; padding: 10px; font-weight: bold; width: 100%; cursor: pointer;">Enviar a WhatsApp</button>
-  </div>
-</div>
-<script>
-  function toggleChat() {
+ function toggleChat() {
   const box = document.getElementById('chat-box');
   const bubble = document.getElementById('chat-bubble');
-  const isVisible = box.offsetParent !== null;
-  box.style.display = isVisible ? 'none' : 'block';
-  bubble.innerText = isVisible ? '¿Cómo puedo ayudarte?' : 'Cerrar';
+  const isVisible = box.style.display === 'block';
+
+  if (isVisible) {
+    box.style.display = 'none';
     bubble.innerText = '¿Cómo puedo ayudarte?';
   } else {
     box.style.display = 'block';
@@ -412,6 +410,10 @@
     const audio = document.getElementById('chatSound');
     if (audio) {
       audio.currentTime = 0;
+      audio.play();
+    }
+  }
+}
       audio.play();
     }
   }
