@@ -373,13 +373,11 @@
   observer.observe(document.getElementById('counter'));
 </script>
 <!-- Mini Chat Flotante -->
-<div id="mini-chat" style="position: fixed; bottom: 20px; right: 20px; width: 300px; background: #0B1B32; color: white; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.3); font-family: 'Poppins', sans-serif; z-index:9999;">
-  <div style="background: #FFD700; color: #0B1B32; padding: 15px; font-weight: bold; text-align: center;">
-   <!-- Floating Chat Button -->
-<div id="chat-bubble" onclick="toggleChat()" style="position: fixed; bottom: 20px; right: 20px; background: #FFD700; color: #0B1B32; border-radius: 50px; padding: 12px 20px; font-weight: bold; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.2); z-index: 1000; transition: all 0.3s;">
-  ¿Cómo puedo ayudarte?
-</div>
-
+<div id="mini-chat">
+  <!-- Floating Chat Button -->
+  <div id="chat-bubble" onclick="toggleChat()" style="position: fixed; bottom: 20px; right: 20px; background: #FFD700; color: #0B1B32; border-radius: 50px; padding: 12px 20px; font-weight: bold; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.2); z-index: 1000; transition: all 0.3s;">
+    ¿Cómo puedo ayudarte?
+  </div> <!-- cierre de #mini-chat -->
 <!-- Hidden Chat Form -->
 <div id="chat-box" style="display: none; position: fixed; bottom: 80px; right: 20px; width: 300px; background: #0B1B32; color: white; border-radius: 15px; box-shadow: 0 4px 20px rgba(0,0,0,0.3); font-family: 'Poppins', sans-serif; z-index: 9999; padding: 20px; transition: all 0.3s;">
   <div style="font-weight: bold; color: #FFD700; margin-bottom: 10px;">💬 PixelManda Chat</div>
