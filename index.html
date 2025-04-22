@@ -402,12 +402,18 @@
 </div>
 <script>
   function toggleChat() {
-    const box = document.getElementById('chat-box');
-    const bubble = document.getElementById('chat-bubble');
-   const isVisible = box.offsetParent !== null;
-    box.style.display = isVisible ? 'none' : 'block';
-    bubble.innerText = isVisible ? '¿Cómo puedo ayudarte?' : 'Cerrar';
+  const box = document.getElementById('chat-box');
+  const bubble = document.getElementById('chat-bubble');
+  const isVisible = box.offsetParent !== null;
+  box.style.display = isVisible ? 'none' : 'block';
+  bubble.innerText = isVisible ? '¿Cómo puedo ayudarte?' : 'Cerrar';
+
+  if (!isVisible) {
+    const audio = document.getElementById('chatSound');
+    audio.currentTime = 0;
+    audio.play();
   }
+}
 
   function nextStep() {
     const servicio = document.getElementById('servicio').value;
@@ -433,4 +439,7 @@
   }
 </script>
 </body>
+    <audio id="chatSound" preload="auto">
+  <source src="https://assets.mixkit.co/sfx/preview/mixkit-quick-win-video-game-notification-269.wav" type="audio/wav">
+</audio>
 </html>
