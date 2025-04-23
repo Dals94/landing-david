@@ -119,11 +119,13 @@
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   transform: perspective(1000px);
 }
-
-   .card:hover {
-  transform: scale(1.06) rotate3d(1, 1, 0, 6deg);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-  z-index: 5;
+.card:hover {
+  transform: translateY(-12px) scale(1.04);
+  box-shadow: 0 20px 40px rgba(109, 40, 217, 0.2), 0 0 20px rgba(109, 40, 217, 0.15);
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.95), rgba(230, 240, 255, 0.6));
+  border-color: rgba(109, 40, 217, 0.3);
+  transition: all 0.4s ease;
+  z-index: 10;
 }
 
     .card img {
