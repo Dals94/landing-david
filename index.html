@@ -108,18 +108,21 @@
       margin: 0 auto;
     }
   .card {
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-border: 1px solid rgba(255,255,255,0.3)
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   width: 300px;
   padding: 30px 20px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 16px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transform: perspective(1000px);
 }
+
    .card:hover {
-  transform: scale(1.05) rotate(-1deg);
-  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+  transform: scale(1.06) rotate3d(1, 1, 0, 6deg);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
   z-index: 5;
 }
 
